@@ -1,5 +1,5 @@
 import streamlit as st
-from Calculator import CalculateForce, CalculateRateOfWork, CalculatePivotMoments, CalculateKineticEnergy
+from PhysicsCalculatorWebsite.Calculator import CalculateForce, CalculateRateOfWork, CalculatePivotMoments, CalculateKineticEnergy
 
 class DisplayCalculator:
     @staticmethod
@@ -12,7 +12,7 @@ class DisplayCalculator:
         val = st.button("Calculate", key="KineticEnergy")
         if val:
             answer_box = st.container(border=True)
-            answer_box.write(f"The Kinetic Energy of the object is {""} Joules")
+            answer_box.write(f"The Kinetic Energy of the object is {CalculateKineticEnergy(mass, velocity)} Joules")
 
     @staticmethod
     def PivotMoments() -> None:
@@ -23,7 +23,7 @@ class DisplayCalculator:
         val = st.button("Calculate", key="Pivot")
         if val:
             answer_box = st.container(border=True)
-            answer_box.write(f"The force of the moment is {""} Newton Metres")
+            answer_box.write(f"The force of the moment is {CalculatePivotMoments(force_on_pivot, distance_from_pivot)} Newton Metres")
 
 
     @staticmethod
@@ -36,7 +36,7 @@ class DisplayCalculator:
         val = st.button("Calculate", key="Force")
         if val:
             answer_box = st.container(border=True)
-            answer_box.write(f"The force of the object is {""} Newtons")
+            answer_box.write(f"The force of the object is {CalculateForce(mass, acceleration)} Newtons")
 
     @staticmethod
     def RateofWork() -> None:
@@ -47,4 +47,4 @@ class DisplayCalculator:
         val = st.button("Calculate", key="RateOfWork")
         if val:
             answer_box = st.container(border=True)
-            answer_box.write(f"The work done is {""} watts")
+            answer_box.write(f"The work done is {CalculateRateOfWork(total_energy, total_time)} watts")
