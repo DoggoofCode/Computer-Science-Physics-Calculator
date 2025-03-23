@@ -1,5 +1,5 @@
 import streamlit as st
-from PhysicsCalculatorWebsite import DisplayTitle
+from PhysicsCalculatorWebsite import DisplayTitle, DisplayCalculator
 
 def main():
     st.set_page_config(page_title="Physics Calculator", page_icon=":rocket:", layout="wide")
@@ -10,13 +10,13 @@ def main():
     with TitleScreen:
         DisplayTitle.display()
     with KineticEnergy:
-        pass
+        DisplayCalculator.KineticEnergy()
     with PivotMoments:
-        pass
+        DisplayCalculator.PivotMoments()
     with NewtonsForce:
-        pass
+        DisplayCalculator.Force()
     with RateOfWorkDone:
-        pass
+        DisplayCalculator.RateofWork()
 
 if __name__ == "__main__":
     main()
