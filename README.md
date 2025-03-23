@@ -1,7 +1,7 @@
 _(This is copied from my original computer science repo)_
 # How to run:
 1. Clone the repository:
-> `git clone https://github.com/DoggoofCode/repository.git`
+> `git clone https://github.com/DoggoofCode/Computer-Science-Physics-Calculator.git`
 2. Create a Virtual Environment:
 > `python3 -m venv venv`
 3. Activate the Virtual Environment:
