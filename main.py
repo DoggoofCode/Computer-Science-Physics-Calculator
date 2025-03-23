@@ -1,5 +1,5 @@
 import streamlit as st
-from PhysicsCalculatorWebsite.TitlePage import DisplayTitle
+from PhysicsCalculatorWebsite import DisplayTitle
 
 def main():
     st.set_page_config(page_title="Physics Calculator", page_icon=":rocket:", layout="wide")
