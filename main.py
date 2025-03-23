@@ -6,5 +6,16 @@ def main():
 
     TitleScreen, KineticEnergy, PivotMoments, NewtonsForce, RateOfWorkDone = st.tabs(["Title Screen", "Kinetic Energy", "Pivot Moments", "Newton’s Force", "Rate of work done"])
 
+    with TitleScreen:
+        pass
+    with KineticEnergy:
+        pass
+    with PivotMoments:
+        pass
+    with NewtonsForce:
+        pass
+    with RateOfWorkDone:
+        pass
+
 if __name__ == "__main__":
     main()
