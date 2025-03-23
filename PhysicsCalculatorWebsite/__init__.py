@@ -1,2 +1,3 @@
-__all__ = ["DisplayTitle"]
+__all__ = ["DisplayTitle", "DisplayCalculator"]
 from PhysicsCalculatorWebsite.TitlePage import DisplayTitle
+from PhysicsCalculatorWebsite.DisplayCalculator import DisplayCalculator
