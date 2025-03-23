@@ -1,4 +1,5 @@
 import streamlit as st
+from Calculator import CalculateForce, CalculateRateOfWork, CalculatePivotMoments, CalculateKineticEnergy
 
 class DisplayCalculator:
     @staticmethod
